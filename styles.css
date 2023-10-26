@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    background: border-box;
+}
+body {
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 375px 850px;
+    font-family: 'Raleway';
+    
+}
+.first-container {
+    margin: 100px 20px 20px 20px;
+    background-color: hsl(228, 56%, 26%);
+    height: 120px;
+    border-radius: 10px;
+    border-top-right-radius: 100px;
+    padding: 40px;
+}
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-right: 15px;
+    background-color: hsl(229, 57%, 11%);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+.all-images {
+    display: flex;
+}
+.second-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    background-color: hsl(228, 56%, 26%);
+    height: 200px;
+    border-radius: 10px;
+}
+.usage {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: hsl(243, 100%, 93%);
+    font-size: 14px;
+    font-weight: 400;
+}
+.progres-bar {
+    height: 28px;
+    margin: 10px 40px 10px 30px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 15px;
+}
+.progres-bar-half {
+    position: relative;
+    top: 4px;
+    left: 4px;
+    background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    height: 20px;
+    border-radius: 10px;
+    width: 190px;
+}
+.dot {
+    height: 14px;
+    width: 14px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 174px;
+    top: 2px;
+    margin: 0;
+  }
+  .space {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 38px 0px 30px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .third-container {
+    margin: 0 auto;
+    position: relative;
+    bottom: 45px;
+    background-color: white;
+    height: 70px;
+    width: 160px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  h2 {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    color: hsl(229, 57%, 11%);
+  }
+  span {
+    color: hsl(229, 7%, 55%);
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  @media only screen and (min-width: 1400px) {
+    html {
+        height: 850px;
+        width: 1440px;
+    }
+    body {
+        background: url(images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-position-y: 430px;
+        background-color: hsl(229, 57%, 11%);
+    }
+    .wrapper {
+        margin: 350px 100px 300px 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .first-container {
+        width: 250px;
+        margin: 0;
+    }
+    .second-container {
+        height: 150px;
+        width: 600px;
+    }
+    .progres-bar-half {
+        width: 400px;
+    }
+    .dot {
+        left: 383px;
+    }
+    .third-container {
+        position: relative;
+        right: 270px;
+        bottom: 85px;
+    }
+    .usage {
+        text-align: left;
+        margin-left: 30px;
+    }
+  }
+  @media only screen and (min-width: 1900px) {
+    .wrapper {
+    }
+  }
